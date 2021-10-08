@@ -37,6 +37,9 @@ export class MapBoxDemoComponent implements OnInit {
     });
   
     this.map.on('load', () => {
+      // 指示地图是否将围绕数据源中的所有符号增加呈现框 显示哪些符号已经渲染、哪些已经碰撞
+       this.map.showCollisionBoxes = true;
+      //  setStyle(url) 使用新值来更新地图样式 
         this.map.addSource('places', {
           type: 'geojson',
           data: {

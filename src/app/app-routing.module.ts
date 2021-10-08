@@ -18,6 +18,13 @@ const routes: Routes = [
   {path:'mapboxDemo11', loadChildren: ()=>import('./mapbox-maplibre-gl/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
   {path:'mapboxRouter', loadChildren: ()=>import('./mapbox-router/mapbox-router.module').then(module => module.MapBoxRouterModule)},
   {path:'mapboxDemo12', loadChildren: ()=>import('./mapbox-map/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo13', loadChildren: ()=>import('./mapbox-map-clusters/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo14', loadChildren: ()=>import('./mapbox-map-methods/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo14', loadChildren: ()=>import('./mapbox-map-methods/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo15', loadChildren: ()=>import('./mapbox-map-methods-getcanvas-distances/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo16', loadChildren: ()=>import('./mapbox-map-methods-getcanvas-container/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo17', loadChildren: ()=>import('./mapbox-demo17/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
+  {path:'mapboxDemo18', loadChildren: ()=>import('./mapbox-queryRenderedFeatures-demo18/mapbox-demo.module').then(module => module.MapBoxDemoModule)},
 ];
 
 @NgModule({
